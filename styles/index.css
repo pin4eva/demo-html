@@ -1,0 +1,118 @@
+
+
+
+#home {
+display: flex;
+flex-direction: column;
+font-family: 'Public Sans', sans-serif;
+min-height: 100vh;
+margin: 0;
+padding: 0;
+
+}
+
+.container {
+width: 100%;
+max-width: 80%;
+margin-inline: auto;
+}
+
+.text-green {
+color: green;
+}
+
+.header {
+padding-block: 1rem;
+
+
+}
+
+.header a {
+text-decoration: none;
+color: inherit;
+}
+
+.header .logo {
+color: rgb(22, 22, 48);
+font-weight: 700;
+font-size: 2.5rem;
+flex: 1;
+display: flex;
+align-items: baseline;
+gap: 0.5rem;
+}
+
+.header .logo .dot {
+height: 10px;
+width: 10px;
+background-color: green;
+display: block;
+}
+
+.header nav {
+display: flex;
+align-items: center;
+
+}
+
+.header nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+gap: 1rem;
+}
+
+.header nav ul a:hover {
+transition: 0.5s all ease-in-out;
+color: goldenrod;
+}
+
+
+.main{
+flex: 1;
+}
+
+.hero {
+background-image: url("https://mirevamedservices.com/assets/images/header/01_header.jpg");
+min-height: 50vh;
+background-position: center;
+background-size: cover;
+
+}
+.hero-overlay {
+background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-inner {
+min-height: 50vh;
+display: flex;
+align-items: center;
+
+}
+
+.hero-inner-content{
+
+width: 470px;
+}
+
+.hero-inner-content .showcase {
+font-size: 3.5rem;
+font-weight: 700;
+text-transform: uppercase;
+color: green;
+}
+
+.hero-inner-content .showcase-small {
+font-size: 1rem;
+}
+
+.hero-inner-content button {
+padding: 1rem 1.8rem;
+font-size: 1rem;
+border: 0;
+background-color: green;
+color: white;
+}
+
+.footer {background-color: purple;}

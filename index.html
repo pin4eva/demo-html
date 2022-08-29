@@ -5,18 +5,44 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,800;1,700&display=swap"
+    rel="stylesheet">
   <title>Demo HTML</title>
 </head>
 
-<body>
-  <header>
-    <nav>Navbar</nav>
+<body id="home">
+  <header class="header">
+    <nav class="container">
+      <a href="/" class="logo">
+        <span>Ububa </span><span class="dot"></span>
+      </a>
+
+      <ul>
+        <li> <a href="/">Home</a> </li>
+        <li> <a href="/">About</a> </li>
+        <li> <a href="/">Contact Us</a> </li>
+      </ul>
+    </nav>
   </header>
-  <main>
-    <p>Main content</p>
+  <main class="main">
+    <section class="hero">
+      <div class="hero-overlay">
+        <div class="hero-inner container">
+          <div class="hero-inner-content">
+            <p class="showcase">Your health is our top prioty</p>
+            <p class="showcase-small">Consult with our doctors anytime</p>
+
+            <button>Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>
-    <p>Footer</p>
+  <footer class="footer">
+    Footer
   </footer>
 
 </body>
