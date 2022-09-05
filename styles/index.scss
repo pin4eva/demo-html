@@ -28,6 +28,49 @@
 
 .header {
   padding-block: 1rem;
+  .info-container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    min-width: 80%;
+    font-family: "public sans";
+    background-color:$primary;
+    color: $white;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+    .info-left{
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      .fa-solid{
+        color: rgb(204, 174, 97);
+      }
+
+  
+    }
+    .info-right{
+      display: flex;
+      align-items: center;
+      
+        ul{
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+        li{
+          text-decoration: none;
+          a{
+            .fa-brands{
+              color:$white;
+            }
+          }
+  
+        }
+      }
+    }
+  }
 
   nav {
     display: flex;
@@ -73,11 +116,9 @@
   }
 
 }
-
-
-
 // HERO SECTION
 .hero {
+
   background-image: url("https://mirevamedservices.com/assets/images/header/01_header.jpg");
   min-height: 50vh;
   background-position: center;
@@ -91,7 +132,20 @@
     min-height: 50vh;
     display: flex;
     align-items: center;
-
+    button{
+      padding: 1rem 1.8rem;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction:end;
+      font-size: 1rem;
+      padding-bottom: 1rem;
+      border: 0;
+      background-color: $textiary;
+      &:hover{
+        background-color: rgb(132, 187, 132);
+      }
+      color: $white;
+    }
     &-content {
       width: 470px;
 
@@ -106,32 +160,134 @@
         font-size: 1rem;
       }
 
-      button {
-        padding: 1rem 1.8rem;
-        font-size: 1rem;
-        border: 0;
-        background-color: $primary;
-        color: white;
+      
+    }
+    
+  }
+
+}
+  
+//CARD SECTION//
+ .card-all{
+  display: flex;
+  background-color:rgb(40, 143, 40);
+  margin-inline: 18%;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  width: 780px;
+  height: 150px;
+  
+  .card{
+    
+    width: 260px;
+    height: 150px;
+    background-color:green;
+    display: grid;
+    box-sizing: border-box;
+    text-align: center;
+    color:$white;
+    font-size: 14px;
+    position: inherit;
+    border: none;
+  
+    .icon-flex{
+      display: flex;
+    }
+    .card1{
+        background-color: rgb(8, 66, 8);
       }
+    }
+    .card2{
+      width: 260px;
+      position: relative;
+      top: 1rem;
+      height: 150px;
+      background-color:rgb(40, 143, 40);
+      display: grid;
+      gap: 30px;
+      box-sizing: border-box;
+      a{color:$white;
+        text-decoration: none;
+        &:hover{
+          color: $secondary;
+        }
+      }
+      .phone{
+        font-size: 20px;
+      }
+    }
+    .card3{
+      background-color: rgb(58, 182, 58);
+      width:260px ;
+      height:150px ;
+      .icon-flex{
+        display: flex;
     }
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//MEDIA SCREEN
+@media only screen and (max-width: 767px){
+ 
+  .container{
+    .logo {
+      span{
+      color: rgb(22, 22, 48);
+      font-weight: 600;
+      font-size: 1.5rem;
+      gap: 0.6rem;
+      }
+    }
+  
+  }
+ 
+  .hero {
+      button{
+        padding: 0.6rem 1.5rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        font-size: 0.8rem;
+        padding-bottom: 0.8rem;
+        border: 0;
+      }
+        .showcase {
+          font-size: 2.0rem;
+          font-weight: 700;
+         
+        }
+      }
+  .card-all{
+   width: 100%;
+   height: 15%;
+   display: flex;
+   flex-direction: column;
+   margin-inline: 0;
+   background-color: none;
+   .card{
+   width: 100%;
+   height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .card-container{
+      width: 80%;
+      box-sizing: content-box;
+      .card1 .card2 .card3{
+        width: 100%;
+        height: auto;
+      }
+      .fa-solid{
+        display: none;
+      }
+    }
+  }
+  }
+  }
 // FOOTER
 .footer {
-  background-color: purple;
+  height: 15vh;
+  margin-top: 1rem;
 }
+
